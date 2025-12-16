@@ -9,6 +9,9 @@
      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Custom style sheet -->
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/login.css">
     <title>UNICROSS | VERIFY CERTIFICATE</title>
   </head>
   <body>
@@ -39,18 +42,72 @@
          <li class="nav-item">
           <a class="nav-link text-black fw-semibold text-opacity-60 ms-3 " href="#">Research</a>
         </li>
-         <!-- <li class="nav-item">
-          <a class="nav-link text-black fw-semibold text-opacity-60 ms-4" href="#">Newsletter</a>
-        </li> -->
             <li class="nav-item " >
-            <a class="nav-link text-black fw-semibold text-opacity-60 ms-3 " href="login.html"> Staff Login</a>
+            <a class="nav-link text-black fw-semibold text-opacity-60 ms-3 " href="#" id="form-open"> Staff Login</a>
         </li>
       </ul>
     </div>
 </nav>
 </div>
 <!-- Hero background in carousel -->
- 
+ <section class="home">
+    <div class="form-container">
+        <i class="fa-solid fa-xmark form-close"></i>
+<!-- login form -->
+ <div class="form login-form">
+    <form action="#">
+        <h2>Login</h2>
+      <div class="input_box">
+        <input type="email" name="" id="" placeholder="Enter your Email" required>
+        <i class="fa-regular fa-envelope email"></i>
+      </div>
+      <div class="input_box">
+        <input type="password" name="" id="" placeholder="Enter your Password " required>
+        <i class="fa-solid fa-lock password"></i>
+        <i class="fa-regular fa-eye-slash pw-hide"></i>
+      </div>
+      <div class="option-field">
+        <span class="checkbox">
+            <input type="checkbox" name="" id="check">
+            <label for="check"> Remember me</label>
+        </span>
+        <a href="#" class="forgot_password">Forgot password?</a>
+      </div>
+      <button class="button">Login Now</button>
+      <div class="login_signup">
+        Don't have an account? <a href="#" id="signup">SignUp</a>
+      </div>
+    </form>
+ </div>
+
+
+    
+       <!-- Signup form -->
+ <div class="form signup-form">
+    <form action="#">
+        <h2>SignUp</h2>
+      <div class="input_box">
+        <input type="email" name="" id="" placeholder="Enter your Email" required>
+        <i class="fa-regular fa-envelope email"></i>
+      </div>
+      <div class="input_box">
+        <input type="password" name="" id="" placeholder="Create Password " required>
+        <i class="fa-solid fa-lock password"></i>
+        <i class="fa-regular fa-eye-slash pw-hide"></i>
+      </div>
+      <div class="input_box">
+        <input type="password" name="" id="" placeholder="Confirm Password " required>
+        <i class="fa-solid fa-lock password"></i>
+        <i class="fa-regular fa-eye-slash pw-hide"></i>
+      </div>
+      <button class="button">SignUp Now</button>
+      <div class="login_signup">
+        Already have an account? <a href="#" id="login">Login</a>
+      </div>
+    </form>
+ </div>
+  </div>
+</section>
 <main>
     <div id="carouselExampleCaptions" class="carousel slide">
   <div class="carousel-indicators">
@@ -219,6 +276,7 @@ Copyright © 2026 All Rights Reserved. Developed By Iboro Aniekan
 </footer>
    
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+     <script src="/js/script.js"></script>
 <script>
   document.getElementById("verifyForm").addEventListener("submit", function(e) {
     e.preventDefault(); // stop page refresh
